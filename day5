@@ -1,0 +1,24 @@
+#include <stdio.h>
+struct fraction
+{
+    int num;
+    int den;
+};
+
+struct fraction insert()
+{
+    struct fraction f[100];
+    int i=0;
+    printf("ENTER THE NUMBER OF FRACTIONS")
+    scanf("%d",&n);
+    printf("ENTER THE FRACTIONS");
+    for(i=0;i<n;i++)
+    {
+        printf("ENTER THE NUMERATOR OF %d FRACTION");
+        scanf("%d",&f.[i].num);
+        printf("ENTER THE DENOMINATOR OF %d FRACTION");
+        scanf("%D",&F.[I].den);
+        
+    }
+    
+}
