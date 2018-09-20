@@ -27,4 +27,27 @@ struct frac insert()
     }
     return f;
 }
+struct frac compute(struct frac f)
+{
+    f.num=f.a[0].nume;
+    f.den=f.a[0].deno;
+    for(int k=1;k<f.n;k++)
+    {
+        f.num=f.num*f.a[k].deno+f.den*f.a[k].nume;
+        f.den=f.den*f.a[k].deno;
+    }
+    int gcd,i;
+    int n1=f.num;
+    int n2=f.den;
+     for(i=1; i <=n1  && i <= n2; ++i)
+    {
+        // Checks if i is factor of both integers
+        if(n1%i==0 && n2%i==0)
+            gcd = i;
+    }
+    f.num=f.num/gcd;
+    f.den=f.den/gcd;
+    return f;
+}
+
 
