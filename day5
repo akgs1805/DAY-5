@@ -12,3 +12,19 @@ struct frac
     int num;
     int den;
 };
+struct frac insert()
+{
+    struct frac f;
+    printf("ENTER THE NUMBER OF FRACTIONS");
+    scanf("%d",&f.n);
+    f.a= malloc (f.n*sizeof(struct fraction));
+    for(int i=0;i<f.n;i++)
+    {
+        printf("ENTER THE NUMERATOR OF %d fraction\n",i);
+        scanf("%d",&f.a[i].nume);
+        printf("ENTER THE DENOMINATOR OF %d FRACTION\n",i);
+        scanf("%d",&f.a[i].deno);
+    }
+    return f;
+}
+
