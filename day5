@@ -50,4 +50,19 @@ struct frac compute(struct frac f)
     return f;
 }
 
+struct frac output(struct frac f)
+{
+    printf("THE SUM OF GIVEN FRACTIONS IS \n ");
+    printf("%d\n---\n %d",f.num,f.den);
+}
+
+int main()
+{
+    struct frac f;
+    f=insert();
+    f=compute(f);
+    output(f);
+    return 0;
+}
+
 
